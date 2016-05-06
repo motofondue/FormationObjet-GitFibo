@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Main {
 	private static Scanner scan;
 	public static void main(String[] args) {
+		scan = new Scanner(System.in);
 		System.out.println("Type a positive vualue : ");		
-		int depp=getInputNumber();		
+		int depp = scan.nextInt(); //getInputNumber();		
 		if (depp<0){
 			System.out.println("Positive vualue expected !");
 			return;
